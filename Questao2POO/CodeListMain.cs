@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Globalization;
 using System.Linq;
 using System.Text;
@@ -22,29 +19,32 @@ namespace Questao2POO
 
         private void rbOnibus(object sender, EventArgs e)
         {
-            mktbPlaca.Mask = "000-0000"; // Cria a maskara para CPF
+            mbtCPFCNPJ.Mask = "000,000,000-00"; // Cria a maskara para CPF
 
 
             // Altera os labels para receber os textos de CPF
-            lbPlaca.Text = "Placa";
-            lbAno.Text = "Ano";
-            lbQtdAssentos.Text = "Qtd Assentos";
+            lblCPFCNPJ.Text = "CPF";
+            lblQtdFilhosFuncionarios.Text = "Qtd Filhos";
+            lblSalarioFaturamento.Text = "Salario";
 
+            //altera a visibilidade do componente para false
+            lblNomeFantasia.Visible = false;
+            tbNomeFantasia.Visible = false;
         }
 
         private void rbPj_CheckedChanged(object sender, EventArgs e)
         {
-            mktbPlaca.Mask = "000-0000"; // Cria a maskara para CPF
+            mtbCpfCnpj.Mask = "00,000,000/0000-00"; // Cria a maskara para CPF
 
             // Altera os labels para receber os textos de CNPJ
-            lbPlaca.Text = "Placa";
-            lbAno.Text = "Ano";
-            lbQtdAssentos.Text = "Qtd Assentos";
+            lblCpfCnpj.Text = "CNPJ";
+            lblQtdFilhosFuncionarios.Text = "Qtd Funcionarios";
+            lblSalarioFaturamento.Text = "Faturamento";
 
+            //altera a visibilidade do componente para True
+            lblNomeFantasia.Visible = true;
+            tbNomeFantasia.Visible = true;
         }
-
-        //acabou o tempo de prova
-
 
         // Implementação Botões
         private void btCadastrar_Click(object sender, EventArgs e)

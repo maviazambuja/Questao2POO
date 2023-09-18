@@ -126,6 +126,7 @@
             this.mkdtbPlaca.Name = "mkdtbPlaca";
             this.mkdtbPlaca.Size = new System.Drawing.Size(100, 22);
             this.mkdtbPlaca.TabIndex = 8;
+            this.mkdtbPlaca.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mkdtbPlaca_MaskInputRejected);
             // 
             // tbAno
             // 
@@ -169,7 +170,7 @@
             this.Controls.Add(this.btLimpar);
             this.Controls.Add(this.btCadastrar);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "veículos tipo";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

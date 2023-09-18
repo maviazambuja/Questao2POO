@@ -47,11 +47,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Caminhao.cs" />
+    <Compile Include="CodeListMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="List.Designer.cs">
+      <DependentUpon>List.cs</DependentUpon>
     </Compile>
     <Compile Include="Onibus.cs" />
     <Compile Include="Program.cs" />
